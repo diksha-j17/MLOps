@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('Check Python') {
+            steps {
+                script {
+                    bat 'python --version'
+                    bat 'pip --version'
+                }
+            }
+        }
+    }
+}
