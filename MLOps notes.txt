@@ -1,0 +1,62 @@
+MLOps -> steps in ML cycle
+
+1. Data collection
+2. Data Pre-processing <-> feature engineering (sometimes clubbed, sometimes independent) 
+3. Model building, testing, evaluation
+4. Deployment
+
+DevOps
+ - building s/w
+ - testing
+ - deploying
+
+{
+	Model decay -> latest prediction not available as the data changes and teh predictions made to are of no use as the data is old and now data has 	changed.so the application/ model is of no use, model decay. 
+
+	Model drifting -> predictions not correct, then we have to re-train the model, so again we have to go through the whole ML cycle (pt 1 to 4). Add new 	features for use cases. Re-building the model. Majorly if the source data changes. 
+
+} -> re model build required in both cases. 
+
+
+Diff in DevOps and MLOps
+
+1. Model Moniotoring tools
+	- DVC -> Data version control -> similar to github, based on different versions of data. so each commit will be done when the data changes.
+	- ML flow -> compares models which will be made using GUI. used for experiment tracking. 
+	- Griffana    
+
+x and y are dependent and independent variables 
+flask application to integrate UI and ML model. 
+Train test split - 20% train 80% test
+GridSearchCV - 
+Cross Validation - 
+Scoring - 
+n_jobs -> -1(parallel processing) depends on number of cores of system. 
+
+requirement.txt file -> made inside virtual env. write the dependencies in that. pip install -r requirements.txt
+virtual env
+
+Linear Reg -> parameters -> intercept and positive
+
+Classification problem -> Algos we use
+	- decision tree (for random data)
+	- Random forest (for random data)
+	- SVC (support vector classifier)  (for linear data)
+	- Logistic reg. (for linear data)
+
+
+For every problem we have different algos and every algo has different params. 
+ex : Classification problem -> random forest -> P1, P2 (values like 1,0.1)
+
+to run streamlit app -> streamlit run <file_name.py>
+C:\ProgramData\Jenkins\.jenkins\secrets -> for admin pass for Jenkins 
+
+AWS+JENKINS -> Application
+required things - 
+
+EC2 -> JVM 
+1. jenkins+cutomisations
+2. git
+3. java JDK
+4. Python
+5. pip
